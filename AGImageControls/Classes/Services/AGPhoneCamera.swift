@@ -183,16 +183,6 @@ class AGPhoneCamera {
     }
     
     func savePhoto(_ image: UIImage, location: CLLocation?, completion: (() -> Void)? = nil) {
-        /*PHPhotoLibrary.shared().performChanges({
-            let request = PHAssetChangeRequest.creationRequestForAsset(from: image)
-            request.creationDate = Date()
-            request.location = location
-        }, completionHandler: { _ in
-            DispatchQueue.main.async {
-                completion?()
-            }
-        })*/
-        
         PHPhotoLibrary.shared().performChanges({
             let request = PHAssetChangeRequest.creationRequestForAsset(from: image)
             request.creationDate = Date()
