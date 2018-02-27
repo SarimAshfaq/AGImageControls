@@ -69,11 +69,11 @@ class AGNavigationView: UIView {
     
     //MARK: - Button Actions
     
-    func backButtonDidTouch( _ button : UIButton) {
+    @objc func backButtonDidTouch( _ button : UIButton) {
         self.delegate?.navigationViewBackButtonDidTouch(view: self)
     }
     
-    func doneButtonDidTouch( _ button : UIButton) {
+    @objc func doneButtonDidTouch( _ button : UIButton) {
         self.delegate?.navigationViewDoneButtonDidTouch(view: self)
     }
     
